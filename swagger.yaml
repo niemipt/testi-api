@@ -5,6 +5,8 @@ info:
   contact:
     name: Pete
     email: petri.niemi@sofigate.com
+externalDocs:
+  url: "https://niemipt.github.io/testi-api/"
 servers:
   - url: https://httpbin.org
     description: HTTPBin palvelin
@@ -24,7 +26,7 @@ components:
       scheme: basic
       description: |-
         Example: 
-        > Authorization: Basic ZGVtbzpwQDU1dzByZA ==
+        > Authorization: Basic ZGVtbzpwQDU1dzByZA==
   schemas:
     GetResponse:
       type: object
