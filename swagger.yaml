@@ -7,11 +7,11 @@ info:
     email: petri.niemi@sofigate.com
 servers:
   - url: https://httpbin.org
-    description: Palvelin testailua varten
+    description: HTTPBin palvelin
 paths:
   /get:
     summary: HTTPBin GET
-    description: Testi
+    description: HTTPBin GET resurssi
     get:
       responses:
         '200':
