@@ -1,0 +1,39 @@
+openapi: 3.0.3
+info:
+  title: My API
+  version: '1.0'
+  x-logo:
+    url: ''
+  contact:
+    name: Pete
+    email: petri.niemi@sofigate.com
+paths:
+  /testi:
+    summary: Testailua vain
+    description: Tämä se on hieno :)
+    get:
+      tags: []
+    x-last-modified: 1676899163579
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+      name: BASIC
+      in: header
+      description: |-
+        Example: 
+        > Authorization: Basic ZGVtbzpwQDU1dzByZA ==
+      x-last-modified: 1676899044984
+  schemas: {}
+  headers: {}
+  responses: {}
+  parameters: {}
+tags: []
+servers:
+  - url: https://api.example.io
+    description: ''
+    variables: {}
+    x-last-modified: 1676899014732
+security:
+  - BasicAuth: []
