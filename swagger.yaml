@@ -50,12 +50,12 @@ components:
             X-Amzn-Trace-Id:
               type: string
           additionalProperties: false
-          origin:
-            type: string
-            format: ipv4
-          url:
-            type: string
-            format: url
+        origin:
+          type: string
+          format: ipv4
+        url:
+          type: string
+          format: url
       additionalProperties: false
 security:
   - BasicAuth: []
