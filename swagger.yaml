@@ -21,7 +21,7 @@ paths:
           content:
             'application/json':
               schema:
-                $ref: ./schemas/Responses.yaml#/components/schemas/GetResponse
+                $ref: '#/components/schemas/GetResponse'
   /post:
     summary: HTTPBin POST
     description: HTTPBIn POST resurssi
@@ -30,7 +30,7 @@ paths:
         content:
           'application/json':
             schema:
-              $ref: ./schemas/Requests.yaml#/components/schemas/PostRequest
+              $ref: '#/components/schemas/PostRequest'
       responses:
         '200':
           description: Success
