@@ -1,6 +1,6 @@
 PostRequest:
   type: object
   properties:
-    property:
+    property1:
       type: string
   additionalProperties: true
