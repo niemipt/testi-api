@@ -18,7 +18,7 @@ paths:
       responses:
         '200':
           description: Success
-          $ref: '#/components/schemas/GetResponse'
+          $ref: './schemas/GetResponse.yaml'
 components:
   securitySchemes:
     BasicAuth:
@@ -27,37 +27,5 @@ components:
       description: |-
         Example: 
         > Authorization: Basic ZGVtbzpwQDU1dzByZA==
-  schemas:
-    GetResponse:
-      type: object
-      properties:
-        args:
-          type: object
-        headers:
-          type: object
-          properties:
-            Accept:
-              type: string
-            Accept-Encoding:
-              type: string
-            Accept-Language:
-              type: string
-            Host:
-              type: string
-            Referer:
-              type: string
-              format: url
-            User-Agent:
-              type: string
-            X-Amzn-Trace-Id:
-              type: string
-          additionalProperties: false
-        origin:
-          type: string
-          format: ipv4
-        url:
-          type: string
-          format: url
-      additionalProperties: false
 security:
   - BasicAuth: []
