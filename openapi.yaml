@@ -32,7 +32,7 @@ paths:
             schema:
               $ref: '#/components/schemas/PostRequest'
             examples:
-              '1':
+              Example1:
                 $ref: '#/components/examples/PostRequestExample1'
       responses:
         '200':
