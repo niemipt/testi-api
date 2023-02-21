@@ -56,8 +56,6 @@ components:
       $ref: ./schemas/Requests.yaml#/PostRequest
   examples:
     PostRequestExample1:
-      value:
-        property1: arvo1
-        property2: arvo2
+      $ref: ./examples/Examples.yaml#/PostRequestExample1
 security:
   - BasicAuth: []
