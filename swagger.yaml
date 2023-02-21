@@ -39,6 +39,7 @@ paths:
               schema:
                 type: object
 components:
+  schemas: {}
   securitySchemes:
     BasicAuth:
       type: http
