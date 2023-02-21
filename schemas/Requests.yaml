@@ -1,8 +1,6 @@
-components:
-  schemas:
-    PostRequest:
-      type: object
-      properties:
-        property:
-          type: string
-      additionalProperties: true
+PostRequest:
+  type: object
+  properties:
+    property:
+      type: string
+  additionalProperties: true

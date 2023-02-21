@@ -41,9 +41,9 @@ paths:
 components:
   schemas:
     GetResponse:
-      $ref: ./schemas/Responses.yaml#/components/schemas/GetResponse
+      $ref: ./schemas/Responses.yaml#/GetResponse
     PostRequest:
-      $ref: ./schemas/Requests.yaml#/components/schemas/PostRequest
+      $ref: ./schemas/Requests.yaml#/PostRequest
   securitySchemes:
     BasicAuth:
       type: http
