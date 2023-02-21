@@ -18,7 +18,7 @@ paths:
       responses:
         '200':
           description: Success
-          $ref: './schemas/GetResponse.yaml'
+          $ref: './schemas/GetResponse.yaml#/components/schemas/GetResponse'
 components:
   securitySchemes:
     BasicAuth:
