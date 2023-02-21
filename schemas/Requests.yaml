@@ -1,0 +1,7 @@
+components:
+  schemas:
+    PostRequest:
+      type: object
+      properties:
+        must_have: string
+      additionalProperties: true

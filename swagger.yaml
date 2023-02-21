@@ -6,7 +6,7 @@ info:
     name: Pete
     email: petri.niemi@sofigate.com
 externalDocs:
-  url: "https://niemipt.github.io/testi-api/"
+  url: https://niemipt.github.io/testi-api/
 servers:
   - url: https://httpbin.org
     description: HTTPBin palvelin
@@ -18,7 +18,26 @@ paths:
       responses:
         '200':
           description: Success
-          $ref: './schemas/GetResponse.yaml#/components/schemas/GetResponse'
+          content:
+            'application/json':
+              schema:
+                $ref: ./schemas/Responses.yaml#/components/schemas/GetResponse
+  /post:
+    summary: HTTPBin POST
+    description: HTTPBIn POST resurssi
+    post:
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              $ref: ./schemas/Requests.yaml#/components/schemas/PostRequest
+      responses:
+        '200':
+          description: Success
+          content:
+            'application/json':
+              schema:
+                type: object
 components:
   securitySchemes:
     BasicAuth:
