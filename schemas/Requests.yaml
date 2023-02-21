@@ -3,5 +3,6 @@ components:
     PostRequest:
       type: object
       properties:
-        must_have: string
+        property:
+          type: string
       additionalProperties: true
