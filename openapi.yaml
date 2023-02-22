@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: My API
-  version: '1.0'
+  version: 1.0.0-SNAPSHOT
   contact:
     name: Pete
     email: petri.niemi@sofigate.com
@@ -19,7 +19,7 @@ paths:
         '200':
           description: Success
           content:
-            'application/json':
+            application/json:
               schema:
                 $ref: '#/components/schemas/GetResponse'
   /post:
@@ -28,7 +28,7 @@ paths:
     post:
       requestBody:
         content:
-          'application/json':
+          application/json:
             schema:
               $ref: '#/components/schemas/PostRequest'
             examples:
@@ -38,7 +38,7 @@ paths:
         '200':
           description: Success
           content:
-            'application/json':
+            application/json:
               schema:
                 type: object
 components:
